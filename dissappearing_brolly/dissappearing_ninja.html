@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <link href="dissappearing_ninja.css" type='text/css' rel="stylesheet">
+        <script href="dissappearing_ninja.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Have to import jQuery library for $() selection syntax to work-->
+        <script>
+            $(document).ready(function(){
+                alert("PAGE IS UP");
+                
+            $('img').click(function(){
+                $(this).hide('slow')});
+
+            $('button').click(function(){
+                $("img").show()});
+            })        
+        </script>
+
+    </head>
+    <body>
+        <div>
+            <img src="brolly1.png" alt="brolly">
+            <img src="brolly1.png" alt="brolly">
+            <img src="brolly1.png" alt="brolly">
+            <img src="brolly1.png" alt="brolly">
+            <img src="brolly1.png" alt="brolly">
+            <img src="brolly1.png" alt="brolly">
+            <img src="brolly1.png" alt="brolly">
+            <img src="brolly1.png" alt="brolly">
+        </div>    
+            <button>RESTORE</button>
+    </body>
+</html>

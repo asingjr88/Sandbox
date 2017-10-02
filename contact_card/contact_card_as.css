@@ -1,0 +1,49 @@
+/* Contact Card Styling for assignment*/
+.wrapper{
+width:700px;
+height:550px;
+/* border: 2px dotted black; */
+margin: 10px;
+
+
+}
+.left_side{
+    /*display:inline-block;*/
+    float:left;
+    height:80%;
+    width:300px;
+    /* border: 3px dotted red; */
+    margin:10px;
+}
+    
+.right_side{
+    height:80%;
+    width:300px;
+    /* border: 3px dotted red; */
+    /*display:inline-block;*/
+    float:left;
+    margin:10px;
+}
+#notes{
+
+    height:150px;
+    width: 250px;
+}
+
+form{
+    height:200px;
+    width: auto;
+    
+    display: block;
+    padding:5px;
+    margin:10px
+}
+form input{
+    margin-bottom:10px;
+}
+div .new_contact{
+    border:2px dotted grey;
+    margin:5px;
+    padding:10px
+
+}

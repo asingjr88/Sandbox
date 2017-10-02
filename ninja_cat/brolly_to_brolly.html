@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Document</title>
+            <meta charset="UTF-8">
+            <link href="brolly_to_brolly.css" type='text/css' rel="stylesheet">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                  var triggered = true
+                  $('#buttonChange').click(function(){
+                    if(triggered === true){
+                      $('#main').attr("src", "images/brolly_shirt.png")
+                      triggered = false
+                    } else {
+                      $('#main').attr("src", "images/brolly_melon.png")
+                      triggered = true
+                    }
+                  });
+
+                  $('#1').click(function(){
+                      $(this).attr("src", "images/is_there_one-1.jpeg")
+                    });
+                  $('#2').click(function(){
+                      $(this).attr("src", "images/is_there_one-2.jpeg")
+                    });
+                  $('#3').click(function(){
+                      $(this).attr("src", "images/is_there_one-3.jpeg")
+                    });
+                  $('#4').click(function(){
+                      $(this).attr("src", "images/is_there_one-4.jpeg")
+                    });
+                  $('#5').click(function(){
+                      $(this).attr("src", "images/is_there_one-5.jpeg")
+                    });
+                  $('#revert').click(function(){
+                      $('#1').attr("src", "images/brolly_0-0.jpeg");
+                      $('#2').attr("src", "images/brolly_1-0.jpeg");
+                      $('#3').attr("src", "images/brolly_2-0.jpeg");
+                      $('#4').attr("src", "images/brolly_3-0.jpeg");
+                      $('#5').attr("src", "images/brolly_4-0.jpeg");
+                  });
+                });
+            </script>
+        </head>
+        <body>
+          <div class='container'>
+            <div class="box">
+              <button id="buttonChange">Change Main</button>
+              <img id="main" src="images/brolly_melon.png" alt="close">
+            </div>
+            <div class="box">
+              <button id="revert">Revert Pieces</button>
+              <img class="melon" id="1" src="images/brolly_0-0.jpeg" alt="no">
+              <img class="melon" id="2" src="images/brolly_1-0.jpeg" alt="no">
+              <img class="melon" id="3" src="images/brolly_2-0.jpeg" alt="no">
+              <img class="melon" id="4" src="images/brolly_3-0.jpeg" alt="no">
+              <img class="melon" id="5" src="images/brolly_4-0.jpeg" alt="no">
+            </div>
+          </div>
+        </body>
+    </html>

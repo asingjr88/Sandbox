@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Creating first form in HTML-->
+<html>
+    <head>
+        <title> My Registration Form</title>
+        <meta charset="utf-8">
+        <meta name="First HTML Form" content="Trying HTML Form">
+        <link href="registration_form_styling.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        
+        <h1> My Registration Form</h1>
+            <form>
+                <label for="first_name" >First Name:</label>
+                <input class="formy" type="text" id="first_name" name="first_name"><br>
+
+                <label for="last_name">Last Name:</label>
+                <input class="formy" type="text" id="last_name" name="last_name"><br>
+
+                <label for="email">Email:</label>
+                <input class="formy" type="text" id="email" name="email"><br>
+
+                <label for="password">Password</label>
+                <input class="formy" type="password" id="password" name="password"><br>
+                
+                <label for="pw_confirm">PW Confirm</label>
+                <input class="formy" type="password" id="pw_confirm" name="pw_confirm"><br>
+                
+                <label>Brthday:</label>
+                <input type="date" id="birthday">
+                <img src="calendar.img" alt="Picture of Calendar" style="width:25px;height:25px">
+                <br>
+
+                <input type="radio" id="male" name="gender" value="male">Male<br>
+                <input type="radio" id="female" name="gender" value="female">Female<br>
+                <input type="radio" id="other" name="gender" value="other">Other
+
+                <p> A short description about yourself</p>
+                <textarea name="selfdescription"></textarea><br>
+
+                <p> Favorite Language
+                    <select name="Favorite Language">
+                        <option value="Javascript">Javascript</option>
+                     </select>
+                </p>
+                <input type="submit" value="submit">
+            </form>
+            
+    </body>
+
+    
+</html>

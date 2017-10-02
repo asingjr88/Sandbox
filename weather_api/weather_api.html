@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="weather api practice" content="text box, form, and results">
+    <title>AS WEATHER</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="weather_api.js"></script>
+
+</head>
+<body>
+    <div>
+        <h3>Please Type US City in Box</h3>
+        <form action="submit">
+            <input type="text" name="city" id="city_choice">
+            <button type="submit">See Weather</button>
+        </form>
+    </div>
+        <div id="info">
+            <h2>WEATHER RESULTS</h2>    
+            <p id="results"></p>
+        </div>    
+</body>
+</html>
