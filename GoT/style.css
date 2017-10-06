@@ -1,0 +1,24 @@
+img {
+  margin-top: 40px;
+  object-fit: cover;
+  border-radius: 2%;
+  width: 250px;
+  height: 250px;
+}
+
+.house-container {
+  /*border: 2px solid black;*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 30px 10px#e6e6e6;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#house-info {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}

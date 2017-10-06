@@ -1,0 +1,45 @@
+<!--Practicing with jQuery UI-->
+<!--Draggable Ninja-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+      h2{ margin-left:200px}
+  #draggable { width: 150px; height: 150px; padding: 0.5em;border:2px solid black }
+  img {display:block; margin:20px; height:70px}
+  #solution{ height:200px;}
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+$(document).ready(function(){
+  $( function() {
+    $('.can_be_dragged').draggable();
+  } );
+  $('button').click(function(){
+    $('#blank').html("<img src='goku3.jpg' alt='no goku' id='solution'>");
+  })
+})
+  </script>
+</head>
+<body>
+
+<h2>Can you solve Puzzle</h2>  
+</div>
+    <img src='goku3_3-0.jpeg' alt='no goku' class="ui-widget-content can_be_dragged">
+    <img src='goku3_1-0.jpeg' alt='no goku' class="ui-widget-content can_be_dragged">
+    <img src='goku3_0-0.jpeg' alt='no goku' class="ui-widget-content can_be_dragged">
+    <img src='goku3_2-0.jpeg' alt='no goku' class="ui-widget-content can_be_dragged">
+</div>
+<button>Click me to see full picture</button>
+<p id="blank"></p>
+ 
+ 
+</body>
+</html>

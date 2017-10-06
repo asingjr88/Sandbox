@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <title>GoT Info</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="http://www.makinggameofthrones.com/" class="navbar-brand">Game of Thrones</a>
+    </div>
+    <!-- Collection of nav links and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">129 Productions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row-fluid">
+      <div class="col-md-3">
+        <img id="362" src="./images/stark.jpg"/>
+        <h2>House of Stark</h2>
+      </div>
+      <div class="col-md-3">
+        <img id="378" src="./images/targaryen.jpg"/>
+        <h2>House of Targaryen</h2>
+      </div>
+      <div class="col-md-3">
+        <img id="229" src="./images/lannister.jpg"/>
+        <h2>House of Lannister</h2>
+      </div>
+      <div class="col-md-3">
+        <img id="17" src="./images/baratheon.png"/>
+        <h2>House of Baratheon</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row-fluid">
+      <div class="house-container">
+      <div id="house-info">
+        <h1>House Info</h1>
+      </div>
+        <ul>
+        <li><h3 id="name">Name: </h3></li>
+        <li><h3 id="words">Words: </h3></li>
+        <li><h3 id="titles">Titles: </h3></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  </body>
+  <script src="index.js"></script>
+</html>
