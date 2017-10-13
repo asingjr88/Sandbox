@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <link href="{{url_for('static', filename='css/flask_brolly_to_brolly.css')}}" type='text/css' rel="stylesheet">
+        <script type="text/javascript" src="{{url_for('static', filename='js/brolly_to_brolly.js')}}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- <script>
+            $(document).ready(function(){
+                alert('RUNNING');
+
+            
+            $('button').click(function(){
+                $('#main').attr("src", "images/brolly_shirt.png")}); 
+
+            $('#1').click(function(){
+                $(this).attr("src", "images/brolly_shirt_0-0.jpeg")});               
+
+            $('#2').click(function(){
+                $(this).attr("src", "images/brolly_shirt_1-0.jpeg")});
+
+            $('#3').click(function(){
+                $(this).attr("src", "images/brolly_shirt_2-0.jpeg")});
+
+            $('#4').click(function(){
+                $(this).attr("src", "images/brolly_shirt_3-0.jpeg")});
+        
+            $('#5').click(function(){
+                $(this).attr("src", "images/brolly_shirt_4-0.jpeg")});
+            
+            $('#revert').click(function(){
+                $('#1').attr("src", "images/brolly_0-0.jpeg");
+                $('#2').attr("src", "images/brolly_1-0.jpeg");
+                $('#3').attr("src", "images/brolly_2-0.jpeg");
+                $('#4').attr("src", "images/brolly_3-0.jpeg");
+                $('#5').attr("src", "images/brolly_4-0.jpeg");                          
+            });
+        });        
+        </script> -->
+    </head>
+    <body>
+        <button>Change Main</button>
+        <img id="main" src="images/brolly_melon.png" alt="close">
+        <img class="melon" id="1" src="images/brolly_0-0.jpeg" alt="no">
+        <img class="melon" id="2" src="images/brolly_1-0.jpeg" alt="no">
+        <img class="melon" id="3" src="images/brolly_2-0.jpeg" alt="no">
+        <img class="melon" id="4" src="images/brolly_3-0.jpeg" alt="no">
+        <img class="melon" id="5" src="images/brolly_4-0.jpeg" alt="no">
+        <button id="revert">Revert Pieces</button>
+    </body>
+</html>

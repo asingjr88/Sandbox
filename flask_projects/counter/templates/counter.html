@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="{{url_for('static', filename='js/counter.js')}}"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/counter.css')}}">
+    <title>Counter Assignment</title>
+</head>
+<body>
+    <div class="pull-right">
+    <h1>Counter Number =  {{session['counter']}}</h1>
+    
+    </div>
+    <div class="pull-left">
+        <img src="imgs/counter.jpeg" alt="">
+    </div>
+</body>
+</html>

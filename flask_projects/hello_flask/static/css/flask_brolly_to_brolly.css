@@ -1,0 +1,35 @@
+.melon{
+
+    height:150px;
+    width:470px;
+    display:block;
+    margin:10px;
+}
+
+.main{
+    height:250px;
+    width:400px;
+}
+button{
+    display:block;
+    height:150px;
+    width:250px;
+    background-color:#365A63;
+    background: -webkit-linear-gradient(left,#365A63 , grey); 
+    background: -o-linear-gradient(right, #365A63 , grey); 
+    background: -moz-linear-gradient(right, #365A63 , grey); 
+    background: linear-gradient(to right, #365A63 , grey); 
+    margin:20px;
+  }
+
+#revert{
+    display:block;
+    height:150px;
+    width:250px;
+    background-color:#365A63;
+    background: -webkit-linear-gradient(left,#365A63 , grey); 
+    background: -o-linear-gradient(right, #365A63 , grey); 
+    background: -moz-linear-gradient(right, #365A63 , grey); 
+    background: linear-gradient(to right, #365A63 , grey); 
+    margin:20px;
+}
