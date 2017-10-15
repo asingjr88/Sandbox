@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninja Gold</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='ninja_gold.css')}}">
+</head>
+<body>
+    <div class="container main">
+        <div class='row gold'>
+            <h1>NINJA GOLD</h1><br>
+            <h2 class="pull=left money">Gold: {{gold}}</h2>
+        </div>
+        <div class="row locations">
+            <div class="activity col">
+                <h3 class="text" >Farm</h3>
+                <p class="text">Earns 10 - 20 Gold</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name='building' value="farm">
+                    <input type="submit" value="Get Gold">
+                </form>
+            </div>
+            <div class="activity col">
+                    <h3 class="text">House</h3>
+                    <p class="text">Earns 2-5 Gold</p>
+                    <form action="/process_money" method="post">
+                        <input type="hidden" name='building' value="house">
+                        <input type="submit" value="Get Gold">
+                    </form>
+            </div>
+            <div class="activity col">
+                    <h3 class="text">Casino</h3>
+                    <p class="text">Earns/Takes 0 - 50 Gold</p>
+                    <form action="/process_money" method="post">
+                        <input type="hidden" name='building' value="casino">
+                        <input type="submit" value="Get Gold">
+                    </form>
+            </div>
+            <div class="activity col">
+                    <h3 class="text">Cave</h3>
+                    <p class="text">Earns 5 - 10 Gold</p>
+                    <form action="/process_money" method="post">
+                        <input type="hidden" name='building' value="cave">
+                        <input type="submit" value="Get Gold">
+                    </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 updates form-group">
+                <label for="">Activity Feed</label>
+                <!--<textarea name="comments" id="feed" cols="30" rows="10"></textarea>-->
+                <p id="updates">{{updates}}</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>

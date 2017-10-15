@@ -1,0 +1,56 @@
+.main{
+    background-color: lightblue;
+    outline: #B69494;
+    height:100%;
+    background: -webkit-linear-gradient(right, white, yellow); 
+    background: -o-linear-gradient(right, white, yellow); 
+    background: -moz-linear-gradient(right, white, yellow); 
+    background: linear-gradient(right, white, yellow);
+}
+.acitvity{
+    background-color: grey;
+    outline-offset: 15px black solid;
+    
+}
+.gold{
+    background-color:goldenrod;
+}
+.money{
+    background-color: gold;
+    color:black;
+    text-shadow: 5px 5px orangered
+}
+.activity{
+    height:200px;
+    outline:2px solid gold;
+    align-content: center;
+    background-color:#678DC5;
+    color: black;
+    margin:25px;
+    padding:10px;
+    margin-bottom:20px;
+    text-align: center;
+}
+.locations{
+    margin-top:20px;
+}
+.text{
+    text-align: center;
+}
+label{
+    margin-left:auto;
+    margin-right:auto;
+}
+#updates{
+    height:150px;
+    width: 80%;
+    display:block;
+    color:black;
+    background-color:#B69494;
+    word-break: normal;
+    margin-bottom:20px;
+    margin-left: auto;
+    margin-right:auto;
+    border-bottom: 3px goldenrod solid;
+    box-shadow: 5px 5px 10px gold
+}

@@ -9,7 +9,7 @@ app.secret_key=os.urandom(32)
 @app.route('/')
 def index():
   return render_template("test_form.html")
-# this route will handle our form submission
+  # this route will handle our form submission
 # notice how we defined which HTTP methods are allowed by this route
 
 @app.route('/users', methods=['POST'])
